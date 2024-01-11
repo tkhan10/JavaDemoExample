@@ -3,10 +3,7 @@ package com.tofek.example.spring.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.OptionalInt;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 
 @SpringBootApplication
@@ -21,7 +18,8 @@ public class SpringExampleDemoPracticeApplication {
 		//findMaximumNUmberOfWords();
 		//reversWordsInStringIII();
 		//reversWordsInStringIII_UsingStringBuilder();
-		checkIfStringIsAAcronymOfWords();
+		//checkIfStringIsAAcronymOfWords();
+		uniqueMorseCodeWords();
 	}
 
 
@@ -139,6 +137,35 @@ public class SpringExampleDemoPracticeApplication {
 		}else{
 			return false;
 		}
+	}
 
+	/**'
+	 * 804. Unique Morse Code Words
+	 * @return
+	 */
+	public static int uniqueMorseCodeWords() {
+		String[] morseCode = new String[]{".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
+		String[] inputString = new String[]{"a"};
+		Set<String> strSet = new HashSet<>();
+		for(int i = 0; i<inputString.length; i++){
+			char[] t = inputString[i].toCharArray();
+			StringBuilder stringBuilder = new StringBuilder("");
+			for(int j =0 ; j<t.length; j++){
+				stringBuilder.append(morseCode[(int) t[j] - 97]);
+			}
+			strSet.add(stringBuilder.toString());
+		}
+		System.out.println(strSet.size());
+			return strSet.size();
+	}
+
+	public int countConsistentStrings() {
+		String allowed = "ab";
+		String[] words = new String[]{"ad","bd","aaab","baa","badab"};
+		Arrays.stream(words).forEach(word -> {
+				char[] charArray = word.toCharArray();
+		});
+
+		return 0;
 	}
 }
