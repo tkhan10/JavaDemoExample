@@ -1,4 +1,4 @@
-package com.tofek.example.spring.demo.leetcode;
+package com.tofek.example.spring.demo.leetcode.bitManipulation;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

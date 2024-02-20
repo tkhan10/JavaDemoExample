@@ -1,4 +1,4 @@
-package com.tofek.example.spring.demo.leetcode;
+package com.tofek.example.spring.demo.leetcode.bitManipulation;
 
 public class Number_Steps_Reduce_Number_TO_Zero_1342 {
     /**

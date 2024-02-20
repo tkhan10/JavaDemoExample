@@ -1,4 +1,4 @@
-package com.tofek.example.spring.demo.leetcode;
+package com.tofek.example.spring.demo.leetcode.bitManipulation;
 
 public class Flipping_an_Image_832 {
     public static void main(String[] args) {
